@@ -1,0 +1,39 @@
+.jumbotron {
+    font-size: 50px;
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+
+.schedule {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 900px;
+    float: right;
+    margin-right: 300px;
+    background-color: white;
+}
+
+.find-train {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 200px;
+    background-color: white;
+}
+
+#h {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+form {
+    padding:10px;
+}
+
+.background {
+    background: url('../images/background-image.jpg');
+    background-size: 100% auto;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+</head>
+
+<body class="background">
+    
+<div class="jumbotron">
+    ChooChoo Coordinator
+</div>
+
+<div class="schedule">
+
+        <p id="h">Train Schedule</p>
+    
+    <table class="table">
+        <thead>
+            <th>Train Time</th>
+            <th>Destination</th>
+            <th>Frequency</th>
+            <th>Next Departure(Military Time)</th>
+            <th>Minutes Away</th>
+        </thead>
+
+        <tbody id="train-table"></tbody>
+    </table>
+
+</div>
+
+<div class="find-train">
+        <p id="h">Add Train</p>
+    <form>
+        <div class="form-group">
+          <label for="train-name-input">Station</label>
+          <input class="form-control" id="train-name-input" type="text">
+        </div>
+        <div class="form-group">
+          <label for="dest-input">Destination</label>
+          <input class="form-control" id="dest-input" type="text">
+        </div>
+        <div class="form-group">
+          <label for="firstTrain-input">First Train (HH:mm - military time)</label>
+          <input class="form-control" id="firstTrain-input" type="text">
+        </div>
+        <div class="form-group">
+          <label for="freq-input">Frequency (min)</label>
+          <input class="form-control" id="freq-input" type="text">
+        </div>
+        <button class="btn btn-success" id="add-train-btn" type="submit">Submit</button>
+    </form>
+      
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+  
+
+</body>
+</html>
